@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "name": "Introduction to Python Programming",
+      "author": "Dr. John Smith",
+      "price": "1200",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s"
+
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+
+        "id": 2,
+      "name": "INORGANIC CHEMISTRY FOR YOU",
+      "author": "Emily Brown",
+      "price": "800"
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+        "id": 3,
+      "name": "BOARDS GUIDE ",
+      "author": "Professor Michael Johnson",
+      "price": "1700"
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+        "id": 4,
+      "name": "ROAD_TO_IIT(JEE MAINS+ADVANCE)",
+      "author": "Dr. John Smith",
+      "price": "2500"
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+        "id": 5,
+      "name": "ROAD_TO_MEDICAL",
+      "author": "Dr. John Smith",
+      "price": "2500"
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+        "id": 6,
+      "name": "JEE PYQS(10 YEARS)",
+      "author": "Dr. John Smith",
+      "price": "2000"
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+        "id": 7,
+      "name": "JEE PYQS(10 YEARS)",
+      "author": "Dr. John Smith",
+      "price": "2000"
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+        "id": 8,
+      "name": "BOARDS PYQS ",
+      "author": "Dr. John Smith",
+      "price": "2000"
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+    "id": 9,
+      "name": "ROTATIONAL MECHANICS",
+      "author": "Thomas H. Cormen",
+      "price": "600" 
+    },
+    {
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsnpnjutzlxjs16skfn8HJFKOFpxSZroi1Q&s",
+        "id": 10,
+      "name": "CALCULAS FOR JEE+BOARDS",
+      "author": "Donald E. Knuth",
+      "price": "750" 
+    }
+  ]
+  
