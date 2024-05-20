@@ -14,12 +14,12 @@ const Book = () => {
             We're delighted to have you{" "}
             <span className="text-pink-500">Here! :)</span>
           </h1>
-          <p className="mt-12">
+          <h1 className="mt-12">
             Explore our wide range of books and select the
             ones that best suit your interests and career goals. Whether you're looking to
             develop new skills, advance your career, or pursue a passion, we have something for everyone.
             From <span className="text-pink-500">JEE</span> and <span className="text-pink-500">NEET</span> to <span className="text-pink-500">BOARDS</span> and <span className="text-pink-500">CODING</span>, our books are designed to provide you with the knowledge and expertise you need to succeed. Choose your desired courses today and embark on a journey of learning and growth tailored to your unique aspirations.
-          </p>
+          </h1>
           
           <Link to="/">
           <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
@@ -31,11 +31,11 @@ const Book = () => {
           {book_list.map((item) => (
             <Book_cards key={item.id} item={item} />
           ))}
-          <Link to="/">
+          {/* <Link to="/">
           <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
             Back
           </button>
-          </Link>
+          </Link> */}
         </div>
         
       </div>

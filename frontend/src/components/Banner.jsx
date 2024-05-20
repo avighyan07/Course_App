@@ -8,11 +8,11 @@ const Banner = () => {
         <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36">
           <div className="space-y-8">
             <h1 className="text-2xl md:text-4xl font-bold">
-            Study-Wallah welcomes you  here to learn something{" "}
+            GYAANYATRA welcomes you  here to learn something{" "}
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
             <p className="text-sm md:text-xl">
-            Study-Wallah is your ultimate destination for comprehensive learning resources tailored for JEE, NEET, and Board exams. We understand the importance of these exams in shaping your academic future, and our mission is to empower students like you with the knowledge and skills needed to succeed.
+            GYAANYATRA(JOURNEY OF KNOWLEDGE) is your ultimate destination for comprehensive learning resources tailored for JEE, NEET, and Board exams. We understand the importance of these exams in shaping your academic future, and our mission is to empower students like you with the knowledge and skills needed to succeed.
             </p>
             {/* <label className="input input-bordered flex items-center gap-2">
               <svg

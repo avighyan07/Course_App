@@ -2,30 +2,36 @@
 
 
 
-import React from 'react'
-import list from "../../public/list.json"
+import React, { useEffect, useState } from 'react';
+// import list from "../../public/list.json"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Cards from './Cards';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
-const Free = () => {
-const filterfree=list.filter((data)=>data.price==="Free")
-//   const [book, setBook] = useState([]);
-//   useEffect(() => {
-//     const getBook = async () => {
-//       try {
-//         const res = await axios.get("http://localhost:4001/book");
+import Logout from "./Logout";
+import { useAuth } from "../context/Authprovider";
+import Login from './Login';
 
-//         const data = res.data.filter((data) => data.category === "Free");
-//         console.log(data);
-//         setBook(data);
-//       } catch (error) {
-//         console.log(error);
-//       }
-//     };
-//     getBook();
-//   }, []);
+const Free = () => {
+// const filterfree=list.filter((data)=>data.price===0)
+const [courses, setCourses] = useState([]);
+const [authUser, setAuthUser] = useAuth();
+useEffect(() => {
+    const getCourses = async () => {
+      try {
+        const res = await axios.get("http://localhost:4001/course");
+
+        const data = res.data.filter((data) => data.price === 0);
+        console.log(data);
+        setCourses(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getCourses();
+  }, []);
 
   var settings = {
     dots: true,
@@ -71,20 +77,32 @@ const filterfree=list.filter((data)=>data.price==="Free")
 
         <div>
           <Slider {...settings}>
-            {filterfree.map((item) => (
+            {/* {filterfree.map((item) => (
+              <Cards item={item} key={item.id} />
+            ))} */}
+            {courses.map((item) => (
               <Cards item={item} key={item.id} />
             ))}
           </Slider>
         </div>
+        
       </div>
-      {/* <div className="flex justify-end">
+      {/* <Logout></Logout> */}
+      {authUser ? (
+              <Logout />
+            ) : (
+              
+                <Login />
+              
+            )}
+    </>
+  );
+}
+export default Free;
+{/* <div className="flex justify-end">
             <Link to="/course">
               <button className="mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
                 Next
               </button>
             </Link>
           </div> */}
-    </>
-  );
-}
-export default Free;
